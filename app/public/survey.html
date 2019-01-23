@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- my css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <title>FriendFinder</title>
+</head>
+
+<body>
+    <div class="modal fade" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="matchModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="matchModalLabel">You have a mate!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Questions</h1>
+        <hr class="my-4">
+        <h3>Enter Your Information</h3>
+        <form>
+            <div class="form-group">
+                <label for="formName">Name (Required)</label>
+                <input type="text" class="form-control" id="formName">
+            </div>
+            <div class="form-group">
+                <label for="formImg">Photo URL (Required)</label>
+                <input type="text" class="form-control" id="formImg">
+            </div>
+        </form>
+        <hr class="my-4">
+        <h4>1. I respond well to stress.</h4>
+        <select class="custom-select mb-3" id="question1">
+            <option selected disabled>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h4>2. I am a night owl.</h4>
+        <select class="custom-select mb-3" id="question2">
+            <option selected disabled>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h4>3. I make friends easily.</h4>
+        <select class="custom-select mb-3" id="question3">
+            <option selected disabled>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h4>4. I have a vivid imagination.</h4>
+        <select class="custom-select mb-3" id="question4">
+            <option selected disabled>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h4>5. I worry about things constantly.</h4>
+        <select class="custom-select mb-3" id="question5">
+            <option selected disabled>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h4>6. I love large parties.</h4>
+        <select class="custom-select mb-3" id="question6">
+            <option selected disabled>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h4>7. I get angry easily.</h4>
+        <select class="custom-select mb-3" id="question7">
+            <option selected disabled>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h4>8. I like to take charge.</h4>
+        <select class="custom-select mb-3" id="question8">
+            <option selected disabled>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h4>9. I experience my emotions intensely.</h4>
+        <select class="custom-select mb-3" id="question9">
+            <option selected disabled>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h4>10. I am easily intimidated.</h4>
+        <select class="custom-select mb-3" id="question10">
+            <option selected disabled>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#matchModal" id="submit">Submit</button>
+        <hr class="my-4">
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/luflicesh/FriendFinder">Github
+                        Repo
+                    </a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- my js -->
+    <script>
+        $('#submit').on('click', function (event) {
+            event.preventDefault();
+
+            // insert user input into an object
+            var newUser = {
+                name: $('#formName').val().trim(),
+                photo: $('#formImg').val().trim(),
+                scores: [
+                    parseInt($('#question1').val()),
+                    parseInt($('#question2').val()),
+                    parseInt($('#question3').val()),
+                    parseInt($('#question4').val()),
+                    parseInt($('#question5').val()),
+                    parseInt($('#question6').val()),
+                    parseInt($('#question7').val()),
+                    parseInt($('#question8').val()),
+                    parseInt($('#question9').val()),
+                    parseInt($('#question10').val())
+                ]
+            };
+
+            // add user input to friends list
+            $.post("/api/friends", newUser, function (data) {
+
+                // Once you've found the current user's most compatible friend, display the result as a modal pop-up.
+                // The modal should display both the name and picture of the closest match.                
+                $(".modal-body").html("<h4>" + data.matchName + "</h4>");
+                $(".modal-body").append("<img src='" + data.matchPhoto + "'>");
+                $(".modal").modal("show");
+
+                // Clear the form when submitting
+                $("#formName").val('');
+                $("#formImg").val('');
+                $('#question1').val('');
+                $('#question2').val('');
+                $('#question3').val('');
+                $('#question4').val('');
+                $('#question5').val('');
+                $('#question6').val('');
+                $('#question7').val('');
+                $('#question8').val('');
+                $('#question9').val('');
+                $('#question10').val('');
+            });
+        });
+    </script>
+</body>
+
+</html>
